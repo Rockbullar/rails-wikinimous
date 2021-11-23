@@ -1,0 +1,7 @@
+<h1>Articles#show</h1>
+<p>Find me in app/views/articles/show.html.erb</p>
+<h2><%= @article.title %></h2>
+<p><%= @article.content %></p>
+<li><%= link_to "Edit current article", edit_article_path(@article.id)%></li>
+<li><%= link_to "Delete current article", article_path(@article.id), method: 'delete', data: { confirm: "Are you sure?" }  %></li>
+<li><%= link_to "Return to index", articles_path%></li>
